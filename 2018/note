@@ -1,0 +1,107 @@
+占位符：
+    %s : s=string   字符串
+    %d : d=digit    数字
+    %f : f=float    浮点数  eg: %.2f 表示小数点后保留两位
+
+******* windows下修改编码方式 GBK：chcp936 UTF-8:chcp65001 ******
+
+数据运算：
+    数据类型：
+        数字
+            整数 int(integer)
+                整型
+                长整型
+                *python3以后不区分长整型和整型，所有的都是int
+            浮点数 float
+            复数 complex
+        布尔值   只有两种状态：真or假
+            真：True
+            假：False
+        字符串
+
+
+循环：
+    for：
+        for i in range(1,101,2)
+        break
+        for + else,当for循环完整执行完毕后会执行else中的内容
+    while:
+        while + else,同for
+    continue:
+        跳出本次循环
+
+列表：
+    增：
+        a.append()  在列表a最后为止增加值
+        a.insert()  在列表a中指定index位置增加值
+        a.extend()  将另一个列表合并在a列表中
+    删：
+        a.del()     在内存中删除值
+        a.remove()  删除列表中的值
+        a.pop()     删除并将列表中的值取出
+    改：
+        a[]=""      改变index对应的值
+        a[0:2]=["",""] 改变0到2索引之间的值即0和1索引对应的值
+    查：
+        切片
+        a[0:3:2]  起始和结束的索引位置，左开右闭，步长决定取值方向
+        a[]       取单个索引对应的值
+    index：
+        根据值取索引：
+        a.index("要取位置的值")  返回对应的索引值
+    sort：
+        排序列表
+        a.sort()
+        b = sorted(a)   两种方式都是对a列表进行排序
+
+元组tuple：
+    a = (x,)
+    元组是只读的列表
+
+字典：
+    特点：无序，键唯一    key--value
+    dic = { }
+    dic1 = dict((("  ","  "),))
+    增：
+        dic.setdefault{" "," "}
+        dic.update(dic1)
+    删：
+        dic.clear()         #清空字典
+        del dic             #删除整个字典
+        del dic["key"]      #删除key对应的键值对
+        dic.pop("key")      #删除key对应的键值对，并返回key对应的value
+        dic.popitem()       #随机删除一个键值对，并以元组形式返回值
+
+    改：
+        dic["key"] = value       #按key修改值
+
+    查：
+        dic["key"]          #查 看某个key对应的值
+        dic.keys()          #查看所有的key
+        dic.values()        #查看所有的值
+        dic.items()         #查看所有的键值对
+
+字符串：
+    a = ""
+    a*20
+    a + b
+
+字符编码：
+    编码格式发展
+    ASCII：一个英文字符占一个字节
+    gb2312
+    gbk
+    gb18030
+
+    unicode : utf-32
+              utf-16
+              utf-8  规定一个英文按照ASCII编码占一个字节，一个中文占三个字节
+
+文件操作：
+    data = open("file","a/r/w/a+/r+/w+",encoding="gbk/utf8")
+    data.close()
+    data.flush()
+
+    with open("file","r+),open("file1","w"):
+
+函数，模块，面向对象编程：

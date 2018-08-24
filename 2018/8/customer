@@ -1,0 +1,5 @@
+
+{'1': {'password': '1', 'sex': '1', 'phonenumber': '1', 'job': '1', 'mail': '1'}}
+{'2': {'password': '2', 'sex': '2', 'phonenumber': '2', 'job': '2', 'mail': '2'}}
+{'wun': {'password': '2', 'sex': '2', 'phonenumber': '3', 'job': '4', 'mail': '2'}}
+{'32': {'password': '32', 'sex': 'male', 'phonenumber': '110', 'job': 'it', 'mail': '110'}}
