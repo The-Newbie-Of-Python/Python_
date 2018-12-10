@@ -1,0 +1,15 @@
+Fri 31 Aug 2018 15:25:49 30_03 logging模块.py [line:29] DEBUG debug message
+Fri 31 Aug 2018 15:25:49 30_03 logging模块.py [line:30] INFO info message
+Fri 31 Aug 2018 15:25:49 30_03 logging模块.py [line:31] WARNING warning message
+Fri 31 Aug 2018 15:25:49 30_03 logging模块.py [line:32] ERROR error message
+Fri 31 Aug 2018 15:25:49 30_03 logging模块.py [line:33] CRITICAL critical message
+2018-08-31 15:27:58,623 - root - WARNING - logger warning message
+2018-08-31 15:27:58,623 - root - ERROR - logger error message
+2018-08-31 15:27:58,623 - root - CRITICAL - logger critical message
+2018-08-31 15:28:31,378 - root - WARNING - logger warning message
+2018-08-31 15:28:31,378 - root - ERROR - logger error message
+2018-08-31 15:28:31,378 - root - CRITICAL - logger critical message
+2018-08-31 15:30:19,157 - root - INFO - logger info message
+2018-08-31 15:30:19,157 - root - WARNING - logger warning message
+2018-08-31 15:30:19,157 - root - ERROR - logger error message
+2018-08-31 15:30:19,157 - root - CRITICAL - logger critical message

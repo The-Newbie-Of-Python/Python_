@@ -32,6 +32,7 @@ def zhuce():
 
 
 
+
 '''
 字典存放用户信息，再将字典信息存放在文档中
 {User:{Password:xxx,Sex:xxx,Phonenumber:xxx,Job:xxx,Mail:xxx,}}
