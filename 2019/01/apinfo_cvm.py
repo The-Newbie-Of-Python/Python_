@@ -10,8 +10,8 @@ import random
 import time
 
 '''列出AK信息'''
-SecretId = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-SecretKey = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+SecretId = "AKIDMdjegcmoGYiolXbk5EC********"
+SecretKey = "d5MRL4VoxyvlQvMcha***********"
 
 #需要调用的接口地址
 uri = "cvm.tencentcloudapi.com"
