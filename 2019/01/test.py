@@ -9,8 +9,8 @@
 # from datetime import datetime
 #
 # # 密钥参数
-# # secret_id = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-# # secret_key = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+# # secret_id = "AKIDMdjegcmoGY**********"
+# # secret_key = "d5MRL4Voxyvl************"
 #
 # service = "cvm"
 # host = "cvm.tencentcloudapi.com"
