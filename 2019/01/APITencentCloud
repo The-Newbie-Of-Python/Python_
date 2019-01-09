@@ -8,8 +8,8 @@ V1_版本API练习
 import apinfo_cvm as t
 
 # '''1.列出AK信息'''
-# SecretId = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-# SecretKey = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+# SecretId = "AKIDMdjegcmoG**************E"
+# SecretKey = "d5MRL4Vox*************2lNq7D"
 
 #参数
 '''
