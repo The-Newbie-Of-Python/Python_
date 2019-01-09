@@ -6,8 +6,8 @@
 退还CVM
 '''
 #列出AK信息
-secret_id = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-secret_key = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+secret_id = "AKIDMdjegcmoGYiol*********"
+secret_key = "d5MRL4VoxyvlQvMc*********"
 
 
 #列出所有参数，再根据必要参数筛选
