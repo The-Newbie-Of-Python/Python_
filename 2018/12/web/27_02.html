@@ -1,0 +1,38 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns="http://www.w3.org/1999/html">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<a href="C:\Users\38454\Downloads\iE2WFqajp4EA.mp4">播放</a>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+
+    <body>
+        <video id="video" src=http://1257840533.vod2.myqcloud.com/6b41bf45vodgzp1257840533/06ffb4f45285890783872568310/iE2WFqajp4EA.mp4 controls="controls" autoplay height="100%" width="100%">您的浏览器不支持。</video>
+        <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video'))">全屏</button>
+    </body>
+
+    <script type="text/javascript">
+    //全屏幕播放
+    function launchFullScreen(element) {
+      if(element.requestFullScreen) {
+        element.requestFullScreen();
+      } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+      }
+    }
+    </script>
+</html>

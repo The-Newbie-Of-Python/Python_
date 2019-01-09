@@ -1,0 +1,13 @@
+secret_id = "AKIDz8krbsJ5yKBZQpn74WFkmLPx3EXAMPLE"
+secret_key = "Gu5t9xGARNpq86cd98joQYCN3EXAMPLE"
+
+service = "cvm"
+host = "cvm.tencentcloudapi.com"
+endpoint = "https://" + host
+region = "ap-guangzhou"
+action = "DescribeInstances"
+version = "2017-03-12"
+algorithm = "TC3-HMAC-SHA256"
+timestamp = 1539084154
+date = datetime.utcfromtimestamp(timestamp).strftime("%Y-%m-%d")
+params = {"Limit": 10, "Offset": 0}

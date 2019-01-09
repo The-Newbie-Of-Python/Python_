@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>这是一个JS函数对象练习</h1>
+
+
+
+
+<!--//&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;function 对象-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--//function 创建方式1 （推荐方式）-->
+        <!--function func1(){-->
+            <!--alert(123);-->
+            <!--return 8-->
+        <!--}-->
+        <!--var ret=func1()-->
+            <!--alert(ret)-->
+
+<!--// var func=new Function("参数1","参数n","函数体")-->
+
+<!--// void 阻拦函数的return值返回-->
+<!--alert(void func1())-->
+<!--alert(func1())-->
+
+<!--//-&#45;&#45;&#45;&#45;全局/局部变量&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <!--function func2(){-->
+            <!--a=3;-->
+            <!--var a=4;-->
+        <!--}-->
+        <!--func2();-->
+        <!--alert(a)-->
+<script>
+//----- 接收多参---------
+
+var ret=0;
+function add(){
+    console.log(arguments.length);
+    console.log(arguments);
+
+    for (var i in arguments){
+        ret+=arguments[i]
+    }
+    return ret;
+}
+alert(add(1,2,3,4,5,6))
+</script>
+</body>
+</html>
