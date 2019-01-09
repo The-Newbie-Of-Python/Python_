@@ -1,5 +1,5 @@
-"SecretId = AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-"SecretKey = d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+"SecretId = AKIDMdjegcmoGYiol****************"
+"SecretKey = d5MRL4VoxyvlQvM*****************"
 "uri = cvm.tencentcloudapi.com"
 "Action = DescribeZones"
 "Region = ap-shanghai"
