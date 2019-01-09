@@ -1,5 +1,5 @@
-secret_id = "AKIDz8krbsJ5yKBZQpn74WFkmLPx3EXAMPLE"
-secret_key = "Gu5t9xGARNpq86cd98joQYCN3EXAMPLE"
+secret_id = "AKIDz8krbsJ5yKBZQpn74**********"
+secret_key = "Gu5t9************************LE"
 
 service = "cvm"
 host = "cvm.tencentcloudapi.com"
