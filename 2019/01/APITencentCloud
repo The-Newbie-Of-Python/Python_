@@ -5,7 +5,17 @@
 '''
 V1_版本API练习
 '''
-import apinfo_cvm as t
+import configparser
+
+'''====================================================================================================='''
+#区分大小写configparser模块重写
+class myconf(configparser.ConfigParser):
+    def __init__(self,defaults=None):
+        configparser.ConfigParser.__init__(self,defaults=None)
+    def optionxform(self, optionstr):
+        return optionstr
+'''====================================================================================================='''
+
 
 # '''1.列出AK信息'''
 # SecretId = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
@@ -58,9 +68,33 @@ Region 	是 	String 	公共参数，详见产品支持的地域列表。
 #     "Version":'2017-03-12',
 #     "Region":Region
 # }
+conf = myconf()
+conf.read('api.conf')
+
+AccessKey = conf.items('AccessKey')
+AccessKey_ = {}
+for i in AccessKey:
+    AccessKey_[list(i)[0]] = list(i)[1]
+SecretId = AccessKey_['SecretId']
+SecretKey = AccessKey_['SecretKey']
+
+uri = conf.items('URI')
+uri = uri[0][1]
+
+action = conf.items('Action')
+Action = action[0][1]
+
+region = conf.items('Region')
+Region = region[0][1]
+
+f = conf.items('ParamDict')
+paramDict = {}
+for i in f:
+    paramDict[list(i)[0]] = (list(i)[1])
+
 tempList = []
 tempDict = {}
-for eveKey,eveValue in t.paramDict.items():
+for eveKey,eveValue in paramDict.items():
     tempLowerData = eveKey.lower()
     tempList.append(tempLowerData)
     tempDict[tempLowerData] = eveKey
@@ -69,18 +103,18 @@ tempList.sort()
 '''2.2参数拼接'''
 resultList = []
 for eveData in tempList:
-    tempStr = str(tempDict[eveData]) + "=" + str(t.paramDict[tempDict[eveData]])
+    tempStr = str(tempDict[eveData]) + "=" + str(paramDict[tempDict[eveData]])
     resultList.append(tempStr)
 sourceStr = "&".join(resultList)
 
 '''2.3拼接出需要签名的原文字符串'''
-requestStr = "%s%s%s%s%s"%("GET",t.uri,"/","?",sourceStr)
+requestStr = "%s%s%s%s%s"%("GET",uri,"/","?",sourceStr)
 
 '''2.4生成签名串'''
 import sys
 if sys.version_info[0] > 2 :
     signStr = requestStr.encode("utf-8")
-    SecretKey = t.SecretKey.encode("utf-8")
+    SecretKey = SecretKey.encode("utf-8")
 
 import hashlib
 digestmod = hashlib.sha1
@@ -100,7 +134,7 @@ import urllib.parse
 base64Data = urllib.parse.quote(base64Data)
 
 '''4.请求URL拼接'''
-url = 'https://' + t.uri + '/' + '?' + sourceStr + '&Signature=' + base64Data
+url = 'https://' + uri + '/' + '?' + sourceStr + '&Signature=' + base64Data
 
 
 '''可能会用到的输出方法'''
@@ -108,6 +142,8 @@ url = 'https://' + t.uri + '/' + '?' + sourceStr + '&Signature=' + base64Data
 
 
 if __name__ == '__main__':
+    print(uri)
+    print(Action)
     import urllib.request
 
     print(urllib.request.urlopen(url).read().decode("utf-8"))

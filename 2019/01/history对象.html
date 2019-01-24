@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="forward->" onclick="func1()">
+<a href="history对象2.html">2</a>
+<input type="button" value="back<-" onclick="func2()">
+<input type="button" value="go<->" onclick="func3()">
+
+<script>
+<!--三种方式forward，back，go-->
+<!--go的值可以取+-1，0-->
+alert(1)
+    function func1(){
+        history.forward();
+    }
+    function func2(){
+        history.back();
+    }
+    function func3(){
+        history.go(0);
+    }
+</script>
+</body>
+</html>

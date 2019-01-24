@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="clock" style="width:250px">
+<input type="button" value="begin" onclick="begin_click()">
+<input type="button" value="end" onclick="end()">
+<input type="button" value="timeout" onclick="ff()">
+
+<script>
+    function getTime(){
+        var date = new Date();
+        date = date.toLocaleString();
+        return date
+    }
+
+    function Timeout(){
+        alert(123);
+    }
+    function ff(){
+        var ID=setTimeout(Timeout,1000);
+        <!--clearTimeout(ID)-->
+    }
+
+    function begin() {
+        var stime = getTime();
+        var ret = document.getElementById("clock");
+        ret.value = stime;
+    }
+    var ID;
+    function begin_click() {
+        begin();
+        ID = setInterval(begin,1000);
+    }
+    function end(){
+        clearInterval(ID);
+    }
+
+</script>
+
+</body>
+</html>
