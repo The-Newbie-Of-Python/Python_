@@ -13,8 +13,8 @@ import time
 from datetime import datetime
 
 # 密钥参数
-secret_id = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-secret_key = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+secret_id = "AKIDMdjegcmoG***************"
+secret_key = "d5MRL4Vox***************lNq7D"
 
 service = "cvm"
 host = "cvm.tencentcloudapi.com"

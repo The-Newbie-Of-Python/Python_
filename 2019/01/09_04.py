@@ -13,8 +13,8 @@ import sys
 import time
 
 '''1.列出AK信息'''
-SecretId = "AKIDMdjegcmoGYiolXbk5EC3jEYhiYFo9WdE"
-SecretKey = "d5MRL4VoxyvlQvMchaUHhx658A2lNq7D"
+SecretId = "AKIDMdjegcmoGYiolXb************"
+SecretKey = "d5MRL4VoxyvlQvMchaUH**********"
 
 #参数
 '''
