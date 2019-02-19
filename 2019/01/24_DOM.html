@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p type="text">登陆系统</p>
+<input class="keyword" type="text" onfocus="func1()" onblur="func2()" value="请输入用户名">
+<p></p>
+<input class="pass" type="text" onfocus="func3()" onblur="func4()" value="请输入密码">
+<p></p>
+<a href="https://www.ggbang.club" onclick="func_login()">
+    <button>登陆</button>
+</a>
+
+<p ondblclick="alert('我是双击')">双击</p>
+<p onclick="alert('我是单击')">单击</p>
+
+
+<script>
+    function func1(){
+        <!--console.log(111)-->
+        var ky=document.getElementsByClassName("keyword")[0];
+        console.log(ky);
+        if (ky.value=="请输入用户名"){
+            ky.value="";
+        }
+    }
+    function func2(){
+        console.log(222);
+        var ky=document.getElementsByClassName("keyword")[0];
+        if (ky.value.trim().length==0){
+            ky.value="请输入用户名";
+        }
+    }
+    function func3(){
+        var ky=document.getElementsByClassName("pass")[0];
+        console.log(ky);
+        if (ky.value=="请输入密码"){
+            ky.value="";
+        }
+    }
+    function func4(){
+        var ky=document.getElementsByClassName("pass")[0];
+        if (ky.value.trim().length==0){
+            ky.value="请输入密码";
+        }
+    }
+    function func_login(){
+        var ky=document.getElementsByClassName("keyword")[0];
+        var ky1=document.getElementsByClassName("pass")[0];
+        if (ky.value=='wun'){
+            if(ky1.value=='123.com'){
+
+            }
+        }
+    }
+</script>
+</body>
+</html>
